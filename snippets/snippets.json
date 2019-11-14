@@ -1,0 +1,12 @@
+{
+  "For Loop": {
+    "prefix": ["for", "for-const"],
+    "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
+    "description": "A for loop."
+  },
+  "ReactJs": {
+    "prefix": ["crfh"],
+    "body": ["import React from \"react\";\t function ${TM_FILENAME_BASE}() {\t return (\t<div>\t</div>);\t}\t export default ${TM_FILENAME_BASE};"],
+    "description": "ReactJs Create Function Components"
+  }
+}
