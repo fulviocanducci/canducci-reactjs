@@ -1,20 +1,25 @@
 {
-    "name": "canducci-reactjs",
-    "displayName": "canducci.reactjs",
-    "description": "Canducci Snippets ReactJs",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.40.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "'javascript'",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+  "name": "canducci-reactjs",
+  "displayName": "canducci ReactJS Snippets",
+  "description": "Canducci ReactJs Snippets",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "icon": "images/react.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fulviocanducci/canducci-reactjs"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
 }
