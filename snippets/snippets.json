@@ -1,14 +1,18 @@
 {
-  "For Loop": {
-    "prefix": ["for", "for-const"],
-    "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
-    "description": "A for loop."
+  "ReactJs Export Default FileName": {
+    "prefix": ["crex"],
+    "body": ["", "export default ${TM_FILENAME_BASE/[^0-9^a-z]//gi};"],
+    "description": "ReactJs Create Export Default Filename"
+  },
+  "ReactJs Create useState": {
+    "prefix": ["crus"],
+    "body": ["const[$1, set$2] = useState($3)"],
+    "description": "ReactJs Create useState"
   },
   "ReactJs Simple Function": {
     "prefix": ["crfh"],
     "body": [
       "import React from \"react\";",
-      "",
       "",
       "function ${TM_FILENAME_BASE/[^0-9^a-z]//gi}() {",
       "\treturn (",
@@ -17,16 +21,14 @@
       "\t)",
       "}",
       "",
-      "",
       "export default ${TM_FILENAME_BASE/[^0-9^a-z]//gi};"
     ],
     "description": "ReactJs Create Function Components"
   },
-  "ReactJs Function and useState": {
+  "ReactJs Function with useState": {
     "prefix": ["crfhs"],
     "body": [
       "import React, { useState } from \"react\";",
-      "",
       "",
       "function ${TM_FILENAME_BASE/[^0-9^a-z]//gi}() {",
       "\tconst[$1, set$2] = useState($3)",
@@ -37,9 +39,8 @@
       "\t);",
       "}",
       "",
-      "",
       "export default ${TM_FILENAME_BASE/[^0-9^a-z]//gi};"
     ],
-    "description": "ReactJs Create Function Components"
+    "description": "ReactJs Create Function Components With useState"
   }
 }

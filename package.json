@@ -19,7 +19,14 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
       }
     ]
+  },
+  "dependencies": {
+    "vscode": "^1.1.36"
   }
 }
